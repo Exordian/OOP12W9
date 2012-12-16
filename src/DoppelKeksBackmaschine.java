@@ -1,4 +1,10 @@
 
+/**
+ *
+ * @author Englisch (e1125164), Lenz (e1126963), Schuster (e1025700)
+ * @since December 2012
+ *
+ */
 public class DoppelKeksBackmaschine extends Keksbackmaschine {
 	
 	private Keks vorlage;
@@ -24,5 +30,4 @@ public class DoppelKeksBackmaschine extends Keksbackmaschine {
 		}
 		return null;
 	}
-
 }

@@ -1,4 +1,10 @@
 
+/**
+ *
+ * @author Englisch (e1125164), Lenz (e1126963), Schuster (e1025700)
+ * @since December 2012
+ *
+ */
 public class Position {
 	
 	private int anzahl;
@@ -38,5 +44,4 @@ public class Position {
 			buf.append("Fuellung:\t"+fuellung+"\n");
 		return buf.toString();
 	}
-	
 }

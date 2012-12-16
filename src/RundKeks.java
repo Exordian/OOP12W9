@@ -1,4 +1,10 @@
 
+/**
+ *
+ * @author Englisch (e1125164), Lenz (e1126963), Schuster (e1025700)
+ * @since December 2012
+ *
+ */
 public class RundKeks extends Keks {
 	
 	public RundKeks(Teigart teigart) {
@@ -13,5 +19,4 @@ public class RundKeks extends Keks {
 	public Keks clone() {
 		return new RundKeks(teigart);
 	}
-	
 }
