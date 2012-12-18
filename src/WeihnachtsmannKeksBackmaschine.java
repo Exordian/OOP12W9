@@ -6,9 +6,8 @@
  *
  */
 public class WeihnachtsmannKeksBackmaschine extends Keksbackmaschine {
-	
 	public Keks backe() {
 		return new WeihnachtsmannKeks(teigart);
+		//bakes a santa cookie
 	}
-
 }

@@ -6,7 +6,6 @@
  *
  */
 public class WeihnachtsmannKeks extends Keks {
-	
 	public WeihnachtsmannKeks(Teigart teigart) {
 		super(teigart);
 	}
@@ -18,6 +17,6 @@ public class WeihnachtsmannKeks extends Keks {
 	@Override
 	public Keks clone() {
 		return new WeihnachtsmannKeks(teigart);
+		//returns identical copy of a santa cookie
 	}
-
 }

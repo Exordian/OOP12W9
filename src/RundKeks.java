@@ -6,7 +6,6 @@
  *
  */
 public class RundKeks extends Keks {
-	
 	public RundKeks(Teigart teigart) {
 		super(teigart);
 	}
@@ -18,5 +17,6 @@ public class RundKeks extends Keks {
 	@Override
 	public Keks clone() {
 		return new RundKeks(teigart);
+		//returns identical copy of a round cookie
 	}
 }

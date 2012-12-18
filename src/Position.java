@@ -6,7 +6,6 @@
  *
  */
 public class Position {
-	
 	private int anzahl;
 	private Teigart teigart;
 	private Form form;
@@ -21,27 +20,32 @@ public class Position {
 	
 	public int getAnzahl() {
 		return this.anzahl;
+		//returns the number of cookies on this position
 	}
 	
 	public Teigart getTeigart() {
 		return this.teigart;
+		//returns the dough of the cookie on this position
 	}
 	
 	public Form getForm() {
 		return this.form;
+		//returns the model of the cookies on this position
 	}
 	
 	public Fuellung getFuellung() {
 		return this.fuellung;
+		//returns the filling of the cookies on this position
 	}
 	
 	public String toString() {
-		StringBuffer buf = new StringBuffer();
-		buf.append("Anzahl:\t"+  anzahl  +"\n");
-		buf.append("Teigart:\t"+ teigart +"\n");
-		buf.append("Form:\t"+    form    +"\n");
-		if(this.fuellung != null)
-			buf.append("Fuellung:\t"+fuellung+"\n");
-		return buf.toString();
+		String output = "Anzahl: " + anzahl + "\n" + "Teigart: " + teigart + "\n" + "Form: " + form + "\n";
+		if(this.fuellung != null) {
+			output += "Fuellung: " + fuellung + "\n";
+		} else {
+			output += "keine Fuellung\n";
+		}
+		return output;
+		//returns the position with all the details
 	}
 }

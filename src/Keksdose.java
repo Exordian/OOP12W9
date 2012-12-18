@@ -8,7 +8,6 @@ import java.util.ArrayList;
  *
  */
 public class Keksdose {
-	
 	private ArrayList<Keks> kekse;
 	
 	public Keksdose() {
@@ -16,12 +15,19 @@ public class Keksdose {
 	}
 	
 	public void addKeks(Keks keks) {
+		//keks != null
 		kekse.add(keks);
+		//adds a cookie to the jar
 	}
 	
-	public void inhalt() {
+	public String inhalt() {
+		String output = "";
+		
 		for(Keks k : this.kekse) {
-			System.out.print(k);
+			output += k;
 		}
+		
+		return output;
+		//Eine Methode inhalt für eine Keksdose, die Beschreibungen der in der Dose enthaltenen Kekse auf die Standardausgabe ausgibt.
 	}
 }

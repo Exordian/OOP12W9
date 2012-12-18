@@ -18,5 +18,6 @@ public class MondKeks extends Keks {
 	@Override
 	public Keks clone() {
 		return new MondKeks(teigart);
+		//returns identical copy of a moon cookie
 	}
 }

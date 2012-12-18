@@ -6,7 +6,6 @@
  *
  */
 public abstract class Keks {
-	
 	protected Teigart teigart;
 	
 	public Keks(Teigart teigart) {
@@ -15,6 +14,7 @@ public abstract class Keks {
 	
 	public Teigart getTeigart() {
 		return this.teigart;
+		//returns the cookie dough
 	}
 	
 	public abstract Keks clone();

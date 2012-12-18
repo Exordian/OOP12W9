@@ -8,7 +8,6 @@ import java.util.ArrayList;
  *
  */
 public class Bestellung {
-	
 	private ArrayList<Position> positionen;
 	
 	public Bestellung() {
@@ -17,12 +16,16 @@ public class Bestellung {
 	
 	public void insert(Position pos) {
 		positionen.add(pos);
+		//adds a position to the arrayList
 	}
 	
-	public void drucke() {
+	public String drucke() {
+		String output = "";
 		for(Position pos : this.positionen) {
-			System.out.println(pos);
+			output += pos + "\n";
 		}
+		return output;
+		//Eine Methode drucke für eine Bestellung, die alle Positionen in der Standardausgabe auflistet.
 	}
 	
 	public Keksdose getBestellung() {
@@ -60,5 +63,6 @@ public class Bestellung {
 			keksdose.addKeks(k);
 		}
 		return keksdose;
+		//returns a jar full of freshly baked cookies, yay!
 	}
 }

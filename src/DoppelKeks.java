@@ -6,10 +6,9 @@
  *
  */
 public class DoppelKeks extends Keks {
-	
 	private Fuellung fuellung;
-	private Keks oben;
-	private Keks unten;
+	private Keks oben;  //theoretically you could add two models for upper and lower cookie on a double cookie
+	private Keks unten; //but since it is not required in the specification we did not code this
 	
 	public DoppelKeks(Teigart teigart, Fuellung fuellung, Keks oben, Keks unten) {
 		super(teigart);
@@ -25,6 +24,7 @@ public class DoppelKeks extends Keks {
 	@Override
 	public Keks clone() {
 		return new DoppelKeks(teigart, fuellung, oben.clone(), unten.clone());
+		//returns identical copy of a double cookie
 	}
 
 }
