@@ -77,7 +77,7 @@ public class Test {
 		System.out.println("-------------------------------------------------- Keksdosen");
 		
 		Keksdose kd1 = new Keksdose();
-		System.out.println("Keksdose 1 enthält:");
+		System.out.println("Keksdose 1 enthaelt:");
 		kd1.addKeks(k1);
 		kd1.addKeks(k3);
 		kd1.addKeks(k4);
@@ -85,12 +85,12 @@ public class Test {
 		System.out.println("\n---------------");
 		
 		Keksdose kd2 = b1.getBestellung();
-		System.out.println("Keksdose 2 (von Bestellung 1) enthält:");
+		System.out.println("Keksdose 2 (von Bestellung 1) enthaelt:");
 		System.out.println(kd2.inhalt());
 		System.out.println("\n---------------");
 		
 		Keksdose kd3 = b2.getBestellung();
-		System.out.println("Keksdose 3 (von Bestellung 2) enthält:");
+		System.out.println("Keksdose 3 (von Bestellung 2) enthaelt:");
 		System.out.println(kd3.inhalt());
 	}
 }

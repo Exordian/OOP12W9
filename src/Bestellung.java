@@ -25,7 +25,7 @@ public class Bestellung {
 			output += pos + "\n";
 		}
 		return output;
-		//Eine Methode drucke für eine Bestellung, die alle Positionen in der Standardausgabe auflistet.
+		//Eine Methode drucke fuer eine Bestellung, die alle Positionen in der Standardausgabe auflistet.
 	}
 	
 	public Keksdose getBestellung() {
